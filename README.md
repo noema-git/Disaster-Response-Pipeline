@@ -19,7 +19,11 @@
 
 
 <a id='overview'></a>
-## 1. Overview of the project
+## 1. Overview and motivation of the project
+
+In this project, It will provide disaster responses to analyze data from Figure Eight to build a model for an API that classifies disaster messages.
+
+This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
 
 
 <a id='components'></a>
@@ -79,6 +83,8 @@ After the data cleaning process, run this command **from the project directory**
 ```bat
 python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 ```
+
+<img src="img/train_model.png">
 
 This will use cleaned data to train the model, improve the model with grid search and saved the model to a pickle file (_classifer.pkl_).
 
