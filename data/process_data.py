@@ -38,6 +38,7 @@ def load_data(messages_filepath, categories_filepath):
 
     # Merge the input files in one DataFrame
     df = pd.merge(messages,categories,on='id')
+
     return df 
 
 
@@ -98,6 +99,7 @@ def save_data(df, database_filename):
     df.to_sql(name='DRP', con=sql_con, if_exists="replace")
 
     sql_con.close()
+
 
 def main():
     """
