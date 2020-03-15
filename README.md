@@ -1,6 +1,6 @@
 # Project: Disaster Response Pipeline
 
-<img src="img/disaster_response.png">
+<img src="img/disaster_repsonse.png">
 
 ### Table of Contents
 
