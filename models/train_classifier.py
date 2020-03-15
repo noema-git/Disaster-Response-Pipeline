@@ -37,7 +37,7 @@ def load_data(database_filepath):
     """
     Load data from SQL Database
 
-    Args:
+    Arguments:
     database_filepath: SQL database file
     
     Returns:
@@ -68,7 +68,7 @@ def tokenize(text):
     """
     Tokenizes text data
 
-    Args:
+    Arguments:
     text str: Input messages 
 
     Returns:
@@ -90,7 +90,7 @@ def build_model():
     """
     Build the model with GridSearchCV
     
-    Args:
+    Arguments:
     None
 
     Returns:
@@ -113,7 +113,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     """
     Evaluate the performance of the model
 
-    Args:
+    Arguments:
     model: trained model
     X_test: Test features
     Y_test: Test targets
@@ -126,7 +126,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     # predict
     prediction = model.predict(X_test)
 
-    # Accuracy score
+    # Accuracy
     np.mean(Y_test.values == prediction)
 
     # Classification report
@@ -137,7 +137,7 @@ def save_model(model, model_filepath):
     """
     Saves model in a Python pickle file   
 
-    Args:
+    Arguments:
     model: Trained model
     model_filepath: Filepath
 
